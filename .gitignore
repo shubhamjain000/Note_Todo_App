@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+*.log
+
+# Virtual environment
+venv/
+env/
+
+# Django specific
+*.pot
+*.py[cod]
+*.mo
+*.log
+*.pot
+*.py[cod]
+local_settings.py
+
+# Media and static
+/media/
+staticfiles/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

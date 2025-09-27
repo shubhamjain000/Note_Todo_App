@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div class="text-center mt-5 pt-5">
+    <h1 class="mb-3">Welcome to Notes & To-Do App</h1>
+    <p class="lead mb-4">Organize your life with notes and tasks easily.</p>
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+        <a href="{% url 'note_list' %}" class="landing-btn landing-btn-primary">Go to Notes</a>
+        <a href="{% url 'todo_list' %}" class="landing-btn landing-btn-info">Go to To-Dos</a>
+    </div>
+</div>
+{% endblock %}

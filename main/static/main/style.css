@@ -1,0 +1,125 @@
+/* === Body & Fonts === */
+body {
+    background: linear-gradient(135deg, #f0f4f8, #e2e8f0);
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Navbar === */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: #fff;
+    transform: scale(1.05);
+}
+.navbar .btn-outline-info:hover {
+    background-color: #17a2b8;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* === Cards === */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* === Card Image === */
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* === Card Header === */
+.card-header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* === Buttons === */
+.btn {
+    border-radius: 50px;
+    transition: transform 0.2s;
+}
+.btn-success:hover, .btn-warning:hover, .btn-danger:hover, .btn-secondary:hover {
+    transform: scale(1.05);
+}
+
+/* === Form Inputs === */
+.form-control, .form-check-input {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s;
+}
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 8px rgba(13,110,253,0.3);
+}
+
+/* === Card Footer Buttons === */
+.card-footer {
+    background: transparent;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* === Completed Task === */
+.completed-task {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* === Responsive Cards === */
+@media (max-width: 768px) {
+    .card-footer { flex-direction: column; gap: 10px; }
+}
+
+/* === Landing Page Buttons === */
+.landing-btn {
+    border-radius: 50px;
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+.landing-btn-primary:hover {
+    background-color: #0d6efd;
+    color: #fff;
+    transform: scale(1.05);
+}
+.landing-btn-info:hover {
+    background-color: #17a2b8;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* === Titles === */
+h2, h4 {
+    font-weight: 600;
+}
+
+/* === Notes Image Preview === */
+img.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* === Spacing for fixed navbar === */
+
+
+/* === Optional: smooth hover effect for cards in list pages === */
+.row .col .card:hover {
+    transition: all 0.3s ease-in-out;
+}

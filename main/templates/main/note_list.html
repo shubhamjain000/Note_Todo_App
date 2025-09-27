@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<h2 class="mb-4 text-center text-primary">Your Notes</h2>
+<div class="d-flex justify-content-end mb-3 flex-wrap">
+    <a href="{% url 'add_note' %}" class="btn btn-success mb-2">+ Add Note</a>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for note in notes %}
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            {% if note.image %}
+            <img src="{{ note.image.url }}" class="card-img-top" alt="Note Image">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ note.title }}</h5>
+                <p class="card-text">{{ note.content|truncatewords:20 }}</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between flex-wrap">
+                <a href="{% url 'edit_note' note.id %}" class="btn btn-warning btn-sm">Edit</a>
+                <a href="{% url 'delete_note' note.id %}" class="btn btn-danger btn-sm">Delete</a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p class="text-muted">No notes available. Add your first note!</p>
+    {% endfor %}
+</div>
+{% endblock %}

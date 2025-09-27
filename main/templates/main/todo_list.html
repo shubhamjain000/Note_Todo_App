@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<h2 class="mb-4 text-center text-info">Your To-Do List</h2>
+<div class="d-flex justify-content-end mb-3 flex-wrap">
+    <a href="{% url 'add_todo' %}" class="btn btn-info mb-2">+ Add Task</a>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for todo in todos %}
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title {% if todo.completed %}text-decoration-line-through text-muted{% endif %}">
+                    {{ todo.task }}
+                </h5>
+            </div>
+            <div class="card-footer d-flex justify-content-between flex-wrap">
+                <a href="{% url 'edit_todo' todo.id %}" class="btn btn-warning btn-sm">Edit</a>
+                <a href="{% url 'delete_todo' todo.id %}" class="btn btn-danger btn-sm">Delete</a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p class="text-muted">No tasks available. Add your first task!</p>
+    {% endfor %}
+</div>
+{% endblock %}
