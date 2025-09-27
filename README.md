@@ -10,6 +10,7 @@ Manage To-Do tasks with completion status.
 Responsive and clean UI.
 
 🚀 Features
+
 📒 **Notes with title, content, and image upload.**
 
 ✅ **To-Do tasks with completion toggle.**
