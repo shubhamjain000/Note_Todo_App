@@ -10,17 +10,17 @@ Manage To-Do tasks with completion status.
 Responsive and clean UI.
 
 🚀 Features
-**📒 Notes with title, content, and image upload.
+📒 **Notes with title, content, and image upload.**
 
-✅ To-Do tasks with completion toggle.
+✅ **To-Do tasks with completion toggle.**
 
-🖼️ Image upload support (via Django + Pillow).
+🖼️ **Image upload support (via Django + Pillow).**
 
-🎨 Responsive UI with Bootstrap 5.
+🎨 **Responsive UI with Bootstrap 5.**
 
-🔍 CRUD operations for both apps.
+🔍 **CRUD operations for both apps.**
 
-🗄️ Database: SQLite (default).**
+🗄️ **Database: SQLite (default).**
 
 
 
@@ -29,25 +29,24 @@ Responsive and clean UI.
 
 Clone the repository
 
-**
-git clone https://github.com/YOUR-USERNAME/note-todo-django.git
+**git clone https://github.com/YOUR-USERNAME/note-todo-django.git**
 
-cd note-todo-django**
+**cd note-todo-django**
 
 
 Create a virtual environment
 
-**python -m venv venv
+**python -m venv venv**
 
-source venv/bin/activate   # On Mac/Linux
+**source venv/bin/activate     # On Mac/Linux**
 
-venv\Scripts\activate      # On Windows**
+**venv\Scripts\activate        # On Windows**
 
 
 Install dependencies
 
-**pip install -r requirements.txt
-**
+**pip install -r requirements.txt**
+
 
 Run migrations
 
